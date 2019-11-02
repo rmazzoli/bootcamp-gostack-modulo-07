@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdAddShoppingCart } from 'react-icons/md';
-import { ProductList } from './style';
+import { ProductList } from './styles';
 
 export default function Home() {
   return (
