@@ -45,7 +45,7 @@ function Cart({ cart }) {
                 </div>
               </td>
               <td>
-                <strong>{product.subtotal}</strong>
+                <strong>R$ 265,33</strong>
               </td>
               <td>
                 <button type="button">
