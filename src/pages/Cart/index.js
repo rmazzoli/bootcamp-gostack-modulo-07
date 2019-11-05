@@ -9,7 +9,7 @@ import {
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart }) {
+function Cart({ cart, dispatch }) {
   console.tron.log(cart[0]);
   return (
     <Container>
@@ -48,7 +48,15 @@ function Cart({ cart }) {
                 <strong>R$ 265,33</strong>
               </td>
               <td>
-                <button type="button">
+                <button
+                  type="button"
+                  onClick={() =>
+                    dispatch({
+                      type: 'REMOVE_FROM_CART',
+                      id: product.id,
+                    })
+                  }
+                >
                   <MdDelete size={20} color="7159c1" />
                 </button>
               </td>
